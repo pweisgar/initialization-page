@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
@@ -34,13 +33,14 @@ const languageModels = [
 const questionCategories = [
   { id: "occupation", label: "Occupation" },
   { id: "poi", label: "Points of Interest" },
-  { id: "lifestyle", label: "Lifestyle" },
-  { id: "education", label: "Education" },
-  { id: "hobbies", label: "Hobbies" },
-  { id: "travel", label: "Travel" },
-  { id: "social", label: "Social Media" },
-  { id: "technology", label: "Technology" },
-  { id: "finance", label: "Finance" }
+  { id: "lifestyle", label: "Lifestyle" }
+  // Commented out additional categories for future use
+  // { id: "education", label: "Education" },
+  // { id: "hobbies", label: "Hobbies" },
+  // { id: "travel", label: "Travel" },
+  // { id: "social", label: "Social Media" },
+  // { id: "technology", label: "Technology" },
+  // { id: "finance", label: "Finance" }
 ];
 
 const questionModes = [
