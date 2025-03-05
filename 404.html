@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Collection Initialization</title>
+    <meta name="description" content="Configure and initialize data collection sessions for Geo-KBA and Gen-KBA systems" />
+    <meta name="author" content="Lovable" />
+    <meta property="og:image" content="/initialization-page/og-image.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Single Page App redirect
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <script type="module" src="/initialization-page/assets/index-B8F2-iJj.js"></script>
+    <link rel="stylesheet" href="/initialization-page/assets/index-B8CXLyLE.css">
+  </body>
+</html> 
