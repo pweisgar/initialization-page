@@ -1,38 +1,31 @@
-# Data Collection Initialization Page
+# Data Collection Initialization Page - Design Reference
 
-A React application for configuring and initializing data collection sessions for Geo-KBA and Gen-KBA systems.
+This repository contains a simplified mockup of the Data Collection Initialization interface for Geo-KBA and Gen-KBA systems. The primary purpose is to provide a visual reference for software engineers who will build the production version.
 
-## Features
+## Purpose
 
-- Session configuration interface
-- Data collection initialization
-- Modern UI with shadcn-ui components
-- TypeScript for type safety
-- Vite for fast development and building
+This mockup demonstrates:
 
-## Tech Stack
+- The UI/UX design and interactions
+- Required data collection parameters
+- Form validation and submission flow
+- Default values and options for each parameter
 
-- **Framework**: React with TypeScript
-- **Build Tool**: Vite
-- **UI Components**: shadcn-ui
-- **Styling**: Tailwind CSS
+## Important Notes for Developers
 
-## Getting Started
+- This is a design reference only, not intended for production use
+- The core functionality is in the `src/components` folder
+- The form doesn't connect to any real backend services
 
-### Prerequisites
+## Key Components
 
-- Node.js (v16 or higher)
-- npm (v7 or higher)
+- **Session Form**: The main form component with all parameters
+- **Checkbox Group**: Custom multi-select component for categories
+- **System Mode Selection**: Visual toggle between Geo-KBA and Gen-KBA modes
 
-### Installation
+## Quick Start
 
 ```bash
-# Clone the repository
-git clone https://github.com/pweisgar/initialization-page.git
-
-# Navigate to the project directory
-cd initialization-page
-
 # Install dependencies
 npm install
 
@@ -40,50 +33,15 @@ npm install
 npm run dev
 ```
 
-The application will be available at `http://localhost:8080`.
-
-### Building for Production
-
-```bash
-# Build the application
-npm run build
-
-# Preview the production build
-npm run preview
-```
+The mockup will be available at `http://localhost:8080`.
 
 ## Deployment
 
-This project is deployed using GitHub Pages. The deployment process is automated through the following steps:
+The live mockup is available at: https://pweisgar.github.io/initialization-page/
 
-1. Build the application: `npm run build`
-2. Deploy to GitHub Pages: `npm run deploy`
+## Technology Stack
 
-The deployed site is available at: https://pweisgar.github.io/initialization-page/
-
-## Development
-
-### Project Structure
-
-```
-src/
-├── components/     # React components
-├── lib/           # Utility functions and shared logic
-├── App.tsx        # Main application component
-└── main.tsx       # Application entry point
-```
-
-### Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run deploy` - Deploy to GitHub Pages
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+- React with TypeScript
+- Shadcn UI components
+- Tailwind CSS for styling
+- Vite for development and building

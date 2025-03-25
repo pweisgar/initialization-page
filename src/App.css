@@ -1,8 +1,17 @@
+/* Basic reset styles */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  min-height: 100vh;
+}
+
+/* Prevent conflicts with framework styles */
+.logo, .card, .read-the-docs {
+  /* Removing defaults */
+  all: unset;
 }
 
 .logo {
